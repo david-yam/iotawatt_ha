@@ -29,7 +29,7 @@ class IotawattUpdater(DataUpdateCoordinator):
             hass=hass,
             logger=_LOGGER,
             name=entry.title,
-            update_interval=timedelta(seconds=30),
+            update_interval=timedelta(seconds=5),
         )
 
         self._last_run: datetime | None = None
